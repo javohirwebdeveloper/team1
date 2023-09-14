@@ -1,0 +1,34 @@
+.brands {
+    margin-top: 150px;
+}
+
+.brands__wrapper {
+    margin: 0 auto;
+    max-width: 1090.39px;
+    display: flex;
+    column-gap: 108px;
+    align-items: center;
+}
+
+@include for-large-desktop {
+    .brands__wrapper {
+        margin: 0 auto;
+        column-gap: 50px;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@include for-large-tablet {}
+
+@include for-tablet {
+    .brands {
+        margin-top: 90px;
+    }
+    .brands__wrapper {
+        row-gap: 40px;
+    }
+}
+
+@include for-mobile {}

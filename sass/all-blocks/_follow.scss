@@ -1,0 +1,198 @@
+.follow {
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+
+.follow__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.follow__wrapper h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 63px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.follow__wrapper h4 {
+    font-family: 'Jost', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    width: 737px;
+    line-height: 33px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.follow__wrapper-type {
+    margin-top: 93px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 104px;
+    row-gap: 56px;
+}
+
+.follow__wrapper-type-1,
+.follow__wrapper-type-2,
+.follow__wrapper-type-3,
+.follow__wrapper-type-4 {
+    width: 525px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    height: 642px;
+}
+
+.follow__wrapper-type-1-top,
+.follow__wrapper-type-2-top,
+.follow__wrapper-type-3-top,
+.follow__wrapper-type-4-top {
+    width: 525px;
+    height: 548px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.follow__wrapper-type-1-bottom,
+.follow__wrapper-type-2-bottom,
+.follow__wrapper-type-3-bottom,
+.follow__wrapper-type-4-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+.follow__wrapper-type-1-bottom h3,
+.follow__wrapper-type-2-bottom h3,
+.follow__wrapper-type-3-bottom h3,
+.follow__wrapper-type-4-bottom h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    width: 217px;
+    height: 62px;
+}
+
+.follow__wrapper-type-1-bottom span,
+.follow__wrapper-type-2-bottom span,
+.follow__wrapper-type-3-bottom span,
+.follow__wrapper-type-4-bottom span {
+    font-family: 'Jost', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.follow__wrapper-type-1-bottom img,
+.follow__wrapper-type-2-bottom img,
+.follow__wrapper-type-3-bottom img,
+.follow__wrapper-type-4-bottom img {
+    cursor: pointer;
+}
+
+.follow__wrapper-type-1-top {
+    background-image: url(../images/follow-1.png);
+}
+
+.follow__wrapper-type-2-top {
+    background-image: url(../images/follow-2.png);
+}
+
+.follow__wrapper-type-3-top {
+    background-image: url(../images/follow-3.png);
+}
+
+.follow__wrapper-type-4-top {
+    background-image: url(../images/follow-4.png);
+}
+
+@include for-large-desktop {
+    .follow__wrapper-type {
+        flex-wrap: wrap;
+        column-gap: 60px;
+        row-gap: 56px;
+        justify-content: center;
+    }
+    .follow__wrapper-type-1,
+    .follow__wrapper-type-2,
+    .follow__wrapper-type-3,
+    .follow__wrapper-type-4 {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+        height: 492px;
+    }
+    .follow__wrapper-type-1-top,
+    .follow__wrapper-type-2-top,
+    .follow__wrapper-type-3-top,
+    .follow__wrapper-type-4-top {
+        width: 375px;
+        height: 398px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .follow__wrapper-type-1-bottom,
+    .follow__wrapper-type-2-bottom,
+    .follow__wrapper-type-3-bottom,
+    .follow__wrapper-type-4-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -20px;
+    }
+    .follow__wrapper-type-1-bottom h3,
+    .follow__wrapper-type-2-bottom h3,
+    .follow__wrapper-type-3-bottom h3,
+    .follow__wrapper-type-4-bottom h3 {
+        font-family: 'DM Serif Display', serif;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 31px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        width: 217px;
+        height: 62px;
+    }
+    .follow__wrapper-type-1-bottom span,
+    .follow__wrapper-type-2-bottom span,
+    .follow__wrapper-type-3-bottom span,
+    .follow__wrapper-type-4-bottom span {
+        font-family: 'Jost', sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.01em;
+        text-align: left;
+    }
+    .follow__wrapper h4 {
+        font-family: 'Jost', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        width: 307px;
+        line-height: 33px;
+        letter-spacing: 0.01em;
+        text-align: center;
+        margin-top: 8px;
+    }
+}
+
+@include for-large-tablet {}
+
+@include for-tablet {}
+
+@include for-mobile {
+    .follow {
+        margin-top: 90px;
+        margin-bottom: 120px;
+    }
+}

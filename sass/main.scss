@@ -19,5 +19,12 @@ body {
 @import './fonts';
 @import './variables';
 @import './mixins';
+@import './all-blocks/header';
+@import './all-blocks/plan';
+@import './all-blocks/create';
+@import './all-blocks/about';
+@import './all-blocks/brands';
+@import './all-blocks/follow';
 @import './all-blocks/section-count';
 @import './all-blocks/_article-section.scss';
+@import './all-blocks/footer';

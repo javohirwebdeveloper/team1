@@ -1,0 +1,132 @@
+.create {
+    padding-top: 200px;
+}
+
+.create__wrapper {
+    display: flex;
+    column-gap: 75px;
+}
+
+.create__wrapper-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.create__wrapper-left h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 63px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    width: 430px;
+    columns: #292F36;
+}
+
+.create__wrapper-left h4 {
+    width: 472px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.01em;
+    margin-top: 33px;
+    margin-bottom: 45px;
+    text-align: left;
+    color: #4D5053;
+}
+
+.create__wrapper-left button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 238.14px;
+    height: 75px;
+    border-radius: 18px;
+    background-color: #292F36;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    column-gap: 10px;
+    margin-top: 47px;
+    transition: 0.5s;
+}
+
+.create__wrapper-left button:hover {
+    background-color: #3b4551;
+}
+
+.create__wrapper-left-phone {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    width: 277px;
+    height: 93px;
+}
+
+.create__wrapper-left h3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.create__wrapper-left span {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.create__wrapper-right {
+    background-image: url(../../images/create__wrapper-left.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 653px;
+    height: 700px;
+}
+
+@include for-large-desktop {
+    .create__wrapper {
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 70px;
+    }
+    .create__wrapper-right {
+        width: 100%;
+    }
+}
+
+@include for-mobile {
+    .create__wrapper-left {
+        max-width: 310px;
+    }
+    .create__wrapper-left h2 {
+        font-family: 'DM Serif Display', serif;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 43px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        width: 310px;
+        columns: #292F36;
+    }
+    .create__wrapper-left h4 {
+        max-width: 300px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0.01em;
+        margin-top: 33px;
+        margin-bottom: 45px;
+        text-align: left;
+        color: #4D5053;
+    }
+}

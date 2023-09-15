@@ -27,4 +27,20 @@
     display: flex;
     align-items: center;
     column-gap: 76px;
+    justify-content: center;
+}
+
+@include for-tablet {
+    .counts-rwapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+    }
+    .count {
+        border: none;
+        border-bottom: 1px solid #CDA274;
+        padding-left: 54px;
+        padding-bottom: 20px;
+    }
 }

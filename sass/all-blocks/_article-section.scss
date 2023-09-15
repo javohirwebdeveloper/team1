@@ -26,6 +26,7 @@
         padding: 21px;
         border-radius: 50px;
         position: relative;
+        transition: 0.5s;
         & h3 {
             font-family: $title-font;
             max-width: 226px;
@@ -45,7 +46,13 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            & img {
+                cursor: pointer;
+            }
         }
+    }
+    &-card:hover {
+        scale: (1.1);
     }
 }
 
@@ -71,5 +78,36 @@
         font-size: 16px;
         line-height: 24px;
         color: #4D5053;
+    }
+}
+
+@include for-large-desktop {
+    .article__cards {
+        display: flex;
+        align-items: center;
+        &-card {
+            max-width: 368px;
+        }
+    }
+    .article__cards-card-mainimg {
+        max-width: 238px;
+    }
+    .massage {
+        top: 184px;
+        left: 35px;
+        padding: 4px 5px;
+    }
+}
+
+@include for-tablet {
+    .article__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        justify-content: center;
+        &-card {
+            max-width: 384px;
+        }
     }
 }

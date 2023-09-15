@@ -1,0 +1,30 @@
+.counts {
+    background-color: $secondary-color2;
+    padding: 151px 0;
+    margin-bottom: 200px;
+}
+
+.count {
+    text-align: center;
+    padding-right: 54px;
+    border-right: 1px solid #CDA274;
+    & p {
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+    }
+    & h2 span {
+        font-family: $title-font;
+        font-weight: 400;
+        font-size: 85px;
+        line-height: 106px;
+        color: #CDA274;
+    }
+}
+
+.counts-rwapper {
+    display: flex;
+    align-items: center;
+    column-gap: 76px;
+}

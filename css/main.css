@@ -7,10 +7,126 @@
 html,
 body {
   overflow-x: hidden;
+  font-family: "Jost", sans-serif;
 }
 
 .container {
   max-width: 1221px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+@font-face {
+  font-family: "Jost", sans-serif;
+  src: url(../fonts/Jost-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "DM Serif Display", serif;
+  src: url(../fonts/DMSerifDisplay-Regular.ttf);
+}
+.counts {
+  background-color: #F4F0EC;
+  padding: 151px 0;
+  margin-bottom: 200px;
+}
+
+.count {
+  text-align: center;
+  padding-right: 54px;
+  border-right: 1px solid #CDA274;
+}
+.count p {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+}
+.count h2 span {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 106px;
+  color: #CDA274;
+}
+
+.counts-rwapper {
+  display: flex;
+  align-items: center;
+  column-gap: 76px;
+}
+
+.article h2 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 62px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.article p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  max-width: 811px;
+  margin: 0 auto;
+  margin-bottom: 52px;
+}
+
+.article__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.article__cards-card {
+  border: 1px solid #E7E7E7;
+  padding: 21px;
+  border-radius: 50px;
+  position: relative;
+}
+.article__cards-card h3 {
+  font-family: "DM Serif Display", serif;
+  max-width: 226px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 31px;
+  margin: 21px 0 30px 0;
+}
+.article__cards-card img {
+  border-radius: none;
+}
+.article__cards-card span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.article__cards-card--middle {
+  background-color: #F4F0EC;
+}
+
+.article-news {
+  margin-bottom: 200px;
+}
+
+.massage {
+  background-color: #FFFFFF;
+  padding: 8px 10px;
+  position: absolute;
+  top: 252px;
+  left: 41px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.massage h5 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4D5053;
 }/*# sourceMappingURL=main.css.map */
